@@ -14,7 +14,7 @@ const btnComidaMexicana = document.getElementById('tipo-mexicana');
 const btnComidaChina = document.getElementById('tipo-china');
 const btnComidaItaliana = document.getElementById('tipo-italiana');
 const btnSnacks = document.getElementById('snacks');
-const btnMejoresCalificados = document.getElementById('raking');
+const btnMejoresCalificados = document.getElementById('rating');
 const btnMejoresPrecios = document.getElementById('cost');
 const cardRestaurant = document.getElementById('card');
 
@@ -63,11 +63,11 @@ function clickBoton (idSearch, equalSearch, idComparation){
             let tipoComida = doc.data().type;
             let puntuacion = doc.data().rating;
 
-            cardRestaurant.innerHTML += `Nombre: ${nombre} <br>
-                                        Dirección: ${direccion} <br>
-                                        Costo aprox. por persona: ${costo} <br>
-                                        Tipo de comida: ${tipoComida} <br>
-                                        Puntuación: ${puntuacion} <hr>`;
+            cardRestaurant.innerHTML += `<strong>Nombre: </strong>${nombre} <br>
+                                        <strong>Dirección: </strong>${direccion} <br>
+                                        <strong>Gasto aprox. por persona: </strong>${costo} pesos<br>
+                                        <strong>Tipo de comida: </strong>${tipoComida} <br>
+                                        <strong>Puntuación: </strong>${puntuacion} <hr>`;
             console.log(doc.id, doc.data());
         });
     })
