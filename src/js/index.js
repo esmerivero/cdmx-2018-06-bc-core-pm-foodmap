@@ -12,5 +12,5 @@ function delayIndex(){
 }
 
 function goToHome(){
-    window.location.assign('views/login.html');
+    window.location.assign('views/home.html');
 }
