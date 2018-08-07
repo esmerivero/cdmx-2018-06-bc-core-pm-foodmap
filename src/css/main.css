@@ -1,14 +1,23 @@
-.image {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-    
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
 body{
     background: linear-gradient(#F9C566, #F8AD43, #F79722) fixed;
 }
+.margen {
+    margin-top: 150px;
+}
+.image{
+    animation:spin 4s linear infinite;
+    max-width: 100%;
+    margin-top:50px;
+    left: 50%;
+    position: relative;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+}
 
+.textBrand{
+    font-family: 'Sansita', sans-serif;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
