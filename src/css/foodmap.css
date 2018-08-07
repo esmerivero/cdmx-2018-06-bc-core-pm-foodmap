@@ -1,0 +1,27 @@
+/* body{
+    background: black;
+} */
+
+.btn-primary{
+    margin-top: 5%;
+    width: 80%;
+}
+
+#tipo-mexicana{
+    background-color: #4bcbcc;
+}
+#tipo-china{
+    background-color: #ffd600;
+}
+#tipo-italiana{
+    background-color: #f9a825;
+}
+#snacks{
+    background-color: #dd2c00;
+}
+#rating{
+    background-color: #66bb6a;
+}
+#cost{
+    background-color: #40c4ff;
+}

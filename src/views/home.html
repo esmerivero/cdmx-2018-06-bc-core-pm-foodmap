@@ -6,50 +6,72 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/foodmap.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <section>
-            <header><h1>¡A comer se ha dicho!</h1></header>
-        </section>
-        <section>
-            <!-- <div id = "card"></div> -->
-            <button type="button" class="btn btn-primary mx-auto" id = "tipo-mexicana" data-toggle="modal" data-target="#modalRapiDeli">Comida Mexicana</button>
-            <button type="button" class="btn btn-primary" id = "tipo-china" data-toggle="modal" data-target="#modalRapiDeli">Comida China</button>
-            <button type="button" class="btn btn-primary" id = "tipo-italiana" data-toggle="modal" data-target="#modalRapiDeli">Comida Italiana</button>
-            <button type="button" class="btn btn-primary" id = "snacks" data-toggle="modal" data-target="#modalRapiDeli">Snacks</button>
-            <button type="button" class="btn btn-primary" id = "raking" data-toggle="modal" data-target="#modalRapiDeli">Mejores calificadas</button>
-            <button type="button" class="btn btn-primary" id = "cost" data-toggle="modal" data-target="#modalRapiDeli">Mejores precios</button>
-        </section>
-        <section>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="modalRapiDeli" tabindex="-1" role="dialog" aria-labelledby="modalRapiDeliLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="modalRapiDeliLabel">RapiDeli</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                                <div id = "card"></div>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                              <button type="button" class="btn btn-primary">¡Pedir ahora!</button>
-                            </div>
-                          </div>
+    <section class="container-fluid">
+        <section class="row">
+            <section class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <section class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id = "tipo-mexicana" data-toggle="modal" data-target="#modalRapiDeli">Comida Mexicana</button>
+                    </div>
+                </section>
+                <section class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" id = "tipo-china" data-toggle="modal" data-target="#modalRapiDeli">Comida China</button>
                         </div>
-                      </div>
+                </section>
+                <section class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" id = "tipo-italiana" data-toggle="modal" data-target="#modalRapiDeli">Comida Italiana</button>
+                        </div>
+                </section>
+            </section>
+
+            <section class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <section class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" id = "snacks" data-toggle="modal" data-target="#modalRapiDeli">Snacks</button>
+                        </div>
+                    </section>
+                    <section class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary" id = "rating" data-toggle="modal" data-target="#modalRapiDeli">Mejores calificadas</button>
+                            </div>
+                    </section>
+                    <section class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary" id = "cost" data-toggle="modal" data-target="#modalRapiDeli">Mejores precios</button>
+                            </div>
+                    </section>
+            </section>
         </section>
-    </div>
-    
-    
-    
+
+        <section class="row">
+            <div class="modal fade" id="modalRapiDeli" tabindex="-1" role="dialog" aria-labelledby="modalRapiDeliLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalRapiDeliLabel">RapiDeli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id = "card"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">¡Pedir ahora!</button>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </section>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
     <script src="../js/foodmap.js"></script>
